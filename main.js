@@ -7,7 +7,7 @@ const displayTimer = document.getElementById('timer');
 
 const inputMusica = document.getElementById('alternar-musica');
 const musica = new Audio('/sons/luna-rise-part-one.mp3');
-musica.loop;
+musica.loop = true;
 
 inputMusica.addEventListener('change', () => {
     musica.paused ? musica.play() : musica.pause();
